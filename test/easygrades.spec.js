@@ -1,5 +1,5 @@
-var assert = require("assert")
-var gD = require("./gradeDecoder")
+var assert = require("assert");
+var gradeDecoder = require("../lib/gradeDecoder");
 describe('easygrades', function(){
     describe('gradeDecoder', function(){
         it('it should return a decoded string', function(){
