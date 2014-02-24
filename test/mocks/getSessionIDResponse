@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	ParentConnection Login
+</title><meta content="JavaScript" name="vs_defaultClientScript"><meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+   <style><!--
+span.label {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #336699; FONT-FAMILY: Tahoma,Trebuchet MS, Verdana}
+span.errorlabel {FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #FF0000; FONT-FAMILY: Tahoma,Trebuchet MS, Verdana; WHITE-SPACE: NOWRAP;}
+span.plainlabel {FONT-SIZE: 11px; COLOR: #336699; FONT-FAMILY: Tahoma,Trebuchet MS, Verdana}
+input.textbox {FONT-SIZE: 11px; WIDTH: 188px; FONT-FAMILY: Tahoma,Trebuchet MS, Verdana; HEIGHT: 18px}
+input.button {FONT-WEIGHT: bold; FONT-SIZE: 11px; WIDTH: 88px; FONT-FAMILY: Tahoma,Trebuchet MS, Verdana; HEIGHT: 22px}
+select.combobox {font-family:Tahoma,Trebuchet MS, Verdana;font-size:11px;width:190px;height: 22px}
+td.descriptioncolumn {WIDTH: 60px; HEIGHT: 23px;font-family:Tahoma,Trebuchet MS, Verdana;font-size:11px;}
+td.inputcolumn {WIDTH: 209px; HEIGHT: 23px;font-family:Tahoma,Trebuchet MS, Verdana;font-size:11px;}
+td.fullcolumn {WIDTH: 269;font-family:Tahoma,Trebuchet MS, Verdana;font-size:11px;}
+td.imageheader {HEIGHT: 82px;background-color:#a0a0a0}
+tr.userheader {FONT-WEIGHT:bold;COLOR:#336699;BACKGROUND-COLOR:#deebf5}
+tr.userrow1 {color:Black;background-color:#EEEEEE;}
+tr.userrow2 {color:Black;background-color:#deebf5;}
+a:link {color: #336699; text-decoration: none;}
+a:active {color: #336699; text-decoration: none;}
+a:visited {color: #336699; text-decoration: none;}
+a:hover {color: #336699; text-decoration: underline;}
+a.helplink:link {color: #FFFFFF; text-decoration: none;}
+a.helplink:active {color: #FFFFFF; text-decoration: none;}
+a.helplink:visited {color: #FFFFFF; text-decoration: none;}
+a.helplink:hover {color: #FFFFFF; text-decoration: underline;}
+tr {font-family:Tahoma,Trebuchet MS, Verdana;font-size:11px;}
+table.maintable {height:100px;spacing:2px;padding:2px;width:269px;border:0px;}
+span.regionlabel {FONT-WEIGHT: bold; FONT-SIZE: 18px; COLOR: #336699; FONT-FAMILY: Tahoma,Trebuchet MS, Verdana}
+td.regioncolumn {HEIGHT: 40px;}
+span.regionpadlabel {FONT-SIZE: 15px;}
+td.regionpadcolumn {HEIGHT: 15px;}
+--></style>
+</head>
+<body bgcolor="#ffffff">
+   <form name="Form1" method="post" action="default.aspx?DistrictID=15915" id="Form1" onsubmit="if (this.submitted) return false; else { this.submitted = true; return true; }" autocomplete="off">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyMzYwMTEzMTBkZA==" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<script language="Javascript">
+window.onscroll = function(){
+   saveScrollParameters();}
+
+function saveScrollParameters(){
+   getScrollDocumentElement('__scrollLeft').value = document.body.scrollLeft + '';
+   getScrollDocumentElement('__scrollTop').value = document.body.scrollTop + '';
+   window.status = 'scroll ' + document.body.scrollLeft + ', ' + document.body.scrollTop;}
+
+function getScrollDocumentElement(elementID){
+   if (document.getElementById){
+      return document.getElementById(elementID);
+   }else{
+      if (document.all){
+         return document.all(elementID);
+      }else{
+         if (document.layers){
+            return document.layers(elementID);
+         }
+      }
+   }
+}
+</script><input type="hidden" name="__scrollLeft" id="__scrollLeft" value="0"><input type="hidden" name="__scrollTop" id="__scrollTop" value="0">
+      <table height="100%" cellspacing="0" cellpadding="0" width="100%" border="0">
+         <tr>
+            <td valign="middle" align="center">
+               <table id="tblMain" bgcolor="#deebf5" style="width: 303px; height: 175px; border: 1px solid #336699" cellspacing="0" cellpadding="1" width="303px">
+	<tr>
+		<td bgcolor="#336699">
+                        <span style="font-weight: bold; font-size: 11px; color: #ffffff; font-family: Tahoma,Trebuchet MS, Verdana">Sign In to ParentConnection</span></td>
+		<td align="right" bgcolor="#336699">
+                        <span style="font-size: 11px; color: #ffffff; font-family: Tahoma,Trebuchet MS, Verdana">
+                           <a id="hlkHelp" class="helplink" onClick="window.open(&#39;Help.aspx?Topic=Default&#39;, &#39;Help&#39;, &#39;toolbar=no, scrollbars=1, top=0, height=&#39;+(screen.availHeight-35)+&#39;, left=&#39;+(screen.availWidth - 690)+&#39;, width=680&#39;);return false;" href="about:blank">Help</a></span></td>
+	</tr>
+	<tr>
+		<td valign="middle" align="center" colspan="2">
+                        &nbsp;
+                        <table class="maintable">
+                           <tr>
+                              <td class="descriptioncolumn" align="right">
+                                 <span id="lblDistrict" class="label">District</span></td>
+                              <td class="inputcolumn">
+
+                                 <input type="hidden" name="ddlDistricts" value=""><span class="plainlabel">Northside ISD</span>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td class="descriptioncolumn" align="right">
+                                 <span id="lblUserName" class="label"><label id="Label1" for="txtUserName">Username</label></span></td>
+                              <td class="inputcolumn">
+                                 <input name="txtUserName" type="text" id="txtUserName" tabindex="1" class="textbox" /></td>
+                           </tr>
+                           <tr>
+                              <td class="descriptioncolumn" align="right">
+                                 <span id="lblPassword" class="label"><label id="Label2" for="txtPassword">Password</label></span></td>
+                              <td class="inputcolumn">
+                                 <input name="txtPassword" type="password" id="txtPassword" tabindex="2" class="textbox" /></td>
+                           </tr>
+                           <tr>
+                              <td align="right" class="descriptioncolumn">
+                                 <span class="label">Language</span></td>
+                              <td class="inputcolumn">
+                                 <select name="ddlLanguage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlLanguage\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="ddlLanguage" class="combobox">
+			<option selected="selected" value="en">English</option>
+			<option value="es">Espa&#241;ol</option>
+
+		</select></td>
+                           </tr>
+                           <tr>
+                              <td colspan="2" class="fullcolumn" align="right">
+                                 <input type="submit" name="btnLogOn" value="Log On" id="btnLogOn" tabindex="3" class="button" /></td>
+                           </tr>
+                           <tr>
+                              <td align="right" class="fullcolumn" colspan="2" nowrap>
+                                 <span id="errorLabel" class="errorlabel">
+                                    <span id="lblError" style="color:Red;"></span></span></td>
+                           </tr>
+                        </table>
+                     </td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-bottom-width: 0px;" class="fullcolumn">
+                        &nbsp;<a id="lbtSignUp" href="ParentSignup.aspx?DistrictID=15915">Click here to sign up</a></td>
+	</tr>
+	<tr>
+		<td colspan="2" style="border-top-width: 0px;" class="fullcolumn">
+                        <a id="lbtForgotPW" href="ForgotPW.aspx?DistrictID=15915">Forgot your password?</a></td>
+	</tr>
+	<tr>
+		<td bgcolor="#336699" colspan="2">
+                        <font color="#ffffff"><font face="Tahoma,Trebuchet MS, Verdana"><font size="1">
+                           <span style='white-space:nowrap; font-size:7px;'>Copyright &#169; 2005 - 2014 Pearson Education, Inc. or its affiliate(s).All rights reserved.</span>
+                        </font></font></font>
+                     </td>
+	</tr>
+</table>
+
+               <p>
+                  <span class="label">
+                     </span><br />
+
+               </p>
+            </td>
+         </tr>
+      </table>
+
+<script language="javascript">
+   window.setTimeout('window.scroll(0,0);', 100);
+</script><script language="Javascript">
+<!--
+document.getElementById('txtUserName').focus();
+-->
+</script>
+</form>
+</body>
+</html>
