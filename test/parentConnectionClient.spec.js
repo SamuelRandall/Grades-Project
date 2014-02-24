@@ -12,7 +12,7 @@ describe('parentConnectionClient', function(){
                 .replyWithFile(200, __dirname + '/mocks/getSessionIDResponse', {"Set-Cookie": "ASP.NET_SessionId=lsakedyxcp2rbywzlfs24h4k; path=/; HttpOnly"});
             var client = new parentConnectionClient();
             client.getSessionID();
-            assert.equal('foobar', client.sessionID);
+            assert.equal('lsakedyxcp2rbywzlfs24h4k', client.SessionID);
         })
     })
 })
