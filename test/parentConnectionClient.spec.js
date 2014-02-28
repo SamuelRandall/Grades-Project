@@ -12,7 +12,26 @@ describe('parentConnectionClient', function(){
                 .replyWithFile(200, __dirname + '/mocks/getSessionIDResponse', {"Set-Cookie": "ASP.NET_SessionId=lsakedyxcp2rbywzlfs24h4k; path=/; HttpOnly"});
             var client = new parentConnectionClient();
             client.getSessionID(function(){
-              assert.equal('lsakedyxcp2rbywzlfs24h4k', client.SessionID);
+              assert.equal(client.sessionID, 'lsakedyxcp2rbywzlfs24h4k');
+            });
+        });
+    });
+    describe('login', function(){
+        var scope = nock('https://gradespeed.nisd.net')
+            .post('/pc/default.aspx?DistrictID=15915')
+            .reply(302)
+            .post('/pc/default.aspx?DistrictID=15915')
+            .reply(200);
+        it('should set isLoggedIn to true for 302 response', function(){
+            var client = new parentConnectionClient();
+            client.login("username", "password", function(){
+                assert.equal(client.isLoggedIn, true);
+            });
+        });
+        it('should set isLoggedIn to false for 200 response', function(){
+            var client = new parentConnectionClient();
+            client.login("username", "password", function(){
+                assert.equal(client.isLoggedIn, false);
             });
         });
     });
