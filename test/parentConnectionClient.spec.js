@@ -35,5 +35,34 @@ describe('parentConnectionClient', function(){
             });
         });
     });
+    describe('getGrades', function(){
+        var scope = nock('https://gradespeed.nisd.net')
+            .get('/pc/ParentStudentGrades.aspx')
+            .replyWithFile(200, __dirname + '/mocks/ParentStudentGrades.aspx', {"Set-Cookie": "ASP.NET_SessionId=lsakedyxcp2rbywzlfs24h4k; path=/; HttpOnly"});
+        it('should get grades and add objects to grades array', function(){
+            var client = new parentConnectionClient();
+            client.isLoggedIn = true;
+            var result = client.getGrades(function(){
+                var grades = client.grades;
+                debugger
+                assert.equal(grades[0].teacher, 'Copeland, Joshua');
+                assert.equal(grades[0].course, 'US Hist AP D E');
+                assert.equal(grades[0].period, '01');
+                assert.equal(grades[0].cycle1, '97');
+                assert.equal(grades[0].cycle2, '93');
+                assert.equal(grades[0].cycle3, '95');
+                assert.equal(grades[0].exam1, '74');
+                assert.equal(grades[0].sem1, '91');
+                assert.equal(grades[0].cycle4, '92');
+                assert.equal(grades[0].cycle5, '');
+                assert.equal(grades[0].cycle6, '');
+                assert.equal(grades[0].exam2, '');
+                assert.equal(grades[0].sem2, '92');
+                assert.equal(grades.length, 9);
+
+            });
+            assert.equal(result, true);
+        });
+    });
 });
 
