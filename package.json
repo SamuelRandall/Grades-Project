@@ -11,5 +11,7 @@
     "jade": "*",
     "querystring": "~0.2.0",
     "cheerio": "~0.13.1"
-  }
+  },
+    "private": true,
+    "main": "app.js"
 }
