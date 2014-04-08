@@ -17,7 +17,7 @@ describe('easygrades', function () {
         if (err) {
           return console.log(err);
         }
-        var grades = decoder.parseHtml(data)
+        var grades = decoder.parseHtml(data);
         assert.equal(grades[0].teacher, 'Copeland, Joshua');
         assert.equal(grades[0].course, 'US Hist AP D E');
         assert.equal(grades[0].period, '01');

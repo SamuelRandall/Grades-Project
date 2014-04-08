@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1 Your Grades
+  ul
+    each grade in grades
+        li #{grade.teacher} - #{grade.course} - Period #{grade.period}
+            ul
+                li First Six Weeks: #{grade.cycle1}
+                li Second Six Weeks: #{grade.cycle2}
+                li Third Six Weeks: #{grade.cycle3}
+                li -
+                li Exam 1: #{grade.exam1}
+                li Semester 1: #{grade.sem1}
+                li ---
+                li Fourth Six Weeks: #{grade.cycle4}
+                li Fifth Six Weeks: #{grade.cycle5}
+                li Sixth Six Weeks: #{grade.cycle6}
+                li -
+                li Exam 1: #{grade.exam2}
+                li Semester 1: #{grade.sem2}
+

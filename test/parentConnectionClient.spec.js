@@ -44,7 +44,6 @@ describe('parentConnectionClient', function(){
             client.isLoggedIn = true;
             var result = client.getGrades(function(){
                 var grades = client.grades;
-                debugger
                 assert.equal(grades[0].teacher, 'Copeland, Joshua');
                 assert.equal(grades[0].course, 'US Hist AP D E');
                 assert.equal(grades[0].period, '01');
@@ -59,7 +58,6 @@ describe('parentConnectionClient', function(){
                 assert.equal(grades[0].exam2, '');
                 assert.equal(grades[0].sem2, '92');
                 assert.equal(grades.length, 9);
-
             });
             assert.equal(result, true);
         });
