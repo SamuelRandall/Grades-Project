@@ -3,8 +3,7 @@ extends layout
 block content
     .centered
         h1= title
-        p Welcome to #{title}
-        p #{message}
+        p ParentConnection login:
         form#login(action="/", method="post")
             input.form-control#username(name="username", placeholder="Username")
             br
