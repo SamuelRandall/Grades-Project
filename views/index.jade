@@ -1,12 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  p #{message}
-  form#login(action="/", method="post")
-      label(for="username") Username
-      input#username(name="username")
-      label(for="password") Password
-      input#password(name="password", type="password")
-      input(type="submit", value="Submit")
+    .centered
+        h1= title
+        p Welcome to #{title}
+        p #{message}
+        form#login(action="/", method="post")
+            input.form-control#username(name="username", placeholder="Username")
+            br
+            input.form-control#password(name="password", type="password", placeholder="Password")
+            br
+            input.btn.btn-lg.btn-primary.btn-block(type="submit", value="Sign In")
