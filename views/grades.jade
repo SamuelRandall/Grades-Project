@@ -24,29 +24,30 @@ block content
     - var i = 0
     each grade in grades
         - ++i
-        .row
-            .col-sm-6.col-md-offset-3
-                a(id="#{i}")
-                h2 #{grade.course}
-                .panel.panel-default
-                    .panel-heading
-                        h3.panel-title Details
-                    .panel-body
-                        | Teacher: #{grade.teacher}
-                        br
-                        | Period: #{grade.period}
-                ul.list-group
-                    li.list-group-item.active Semester 1
-                    li.list-group-item Cycle 1: #{grade.cycle1}
-                    li.list-group-item Cycle 2: #{grade.cycle1}
-                    li.list-group-item Cycle 3: #{grade.cycle1}
-                    li.list-group-item Exam: #{grade.exam1}
-                    li.list-group-item Total: #{grade.sem1}
-                ul.list-group
-                    li.list-group-item.active Semester 2
-                    li.list-group-item Cycle 4: #{grade.cycle4}
-                    li.list-group-item Cycle 5: #{grade.cycle5}
-                    li.list-group-item Cycle 6: #{grade.cycle6}
-                    li.list-group-item Exam: #{grade.exam2}
-                    li.list-group-item Total: #{grade.sem2}
+        .container
+            .row
+                .col-sm-6.col-md-offset-3
+                    a(id="#{i}")
+                    h2 #{grade.course}
+                    .panel.panel-default
+                        .panel-heading
+                            h3.panel-title Details
+                        .panel-body
+                            | Teacher: #{grade.teacher}
+                            br
+                            | Period: #{grade.period}
+                    ul.list-group
+                        li.list-group-item.active Semester 1
+                        li.list-group-item Cycle 1: #{grade.cycle1}
+                        li.list-group-item Cycle 2: #{grade.cycle1}
+                        li.list-group-item Cycle 3: #{grade.cycle1}
+                        li.list-group-item Exam: #{grade.exam1}
+                        li.list-group-item Total: #{grade.sem1}
+                    ul.list-group
+                        li.list-group-item.active Semester 2
+                        li.list-group-item Cycle 4: #{grade.cycle4}
+                        li.list-group-item Cycle 5: #{grade.cycle5}
+                        li.list-group-item Cycle 6: #{grade.cycle6}
+                        li.list-group-item Exam: #{grade.exam2}
+                        li.list-group-item Total: #{grade.sem2}
 
