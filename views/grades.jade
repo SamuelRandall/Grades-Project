@@ -1,25 +1,8 @@
 extends layout
 
 block content
-  h1 Your Grades:
-  ul
-    each grade in grades
-        li #{grade.teacher} - #{grade.course} - Period #{grade.period}
-            ul
-                li First Six Weeks: <strong>#{grade.cycle1}</strong>
-                li Second Six Weeks: <strong>#{grade.cycle2}</strong>
-                li Third Six Weeks: <strong>#{grade.cycle3}</strong>
-                li -
-                li Exam 1: <strong>#{grade.exam1}</strong>
-                li Semester 1: <strong>#{grade.sem1}</strong>
-                li ---
-                li Fourth Six Weeks: <strong>#{grade.cycle4}</strong>
-                li Fifth Six Weeks: <strong>#{grade.cycle5}</strong>
-                li Sixth Six Weeks: <strong>#{grade.cycle6}</strong>
-                li -
-                li Exam 2: <strong>#{grade.exam2}</strong>
-                li Semester 2: <strong>#{grade.sem2}</strong>
-    table#grades
+    h1 Your Grades:
+    table#grades.table.table-responsive
         thead
             tr.head
                 th Teacher
@@ -36,8 +19,8 @@ block content
                 th Exam 2
                 th Sem 2
         tbody
-            - var i = -1
-            each val, key in cameras
+            - var i = 0
+            each grade in grades
                 - ++i
                 tr(class=(i % 2 == 0) ? 'odd' : 'even')
                     td #{grade.teacher}
