@@ -1,39 +1,52 @@
 extends layout
 
 block content
-    h1 Your Grades:
-    table#grades.table.table-responsive
-        thead
-            tr.head
-                th Teacher
-                th Course
-                th Period
-                th Cycle 1
-                th Cycle 2
-                th Cycle 3
-                th Exam 1
-                th Sem 1
-                th Cycle 4
-                th Cycle 5
-                th Cycle 6
-                th Exam 2
-                th Sem 2
-        tbody
-            - var i = 0
-            each grade in grades
-                - ++i
-                tr(class=(i % 2 == 0) ? 'odd' : 'even')
-                    td #{grade.teacher}
-                    td #{grade.course}
-                    td #{grade.period}
-                    td #{grade.cycle1}
-                    td #{grade.cycle2}
-                    td #{grade.cycle3}
-                    td #{grade.exam1}
-                    td #{grade.sem1}
-                    td #{grade.cycle4}
-                    td #{grade.cycle5}
-                    td #{grade.cycle6}
-                    td #{grade.exam2}
-                    td #{grade.sem2}
+    .navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+        .container
+            .navbar-header
+                button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-collapse")
+                    | <span class="sr-only">Toggle navigation</span>
+                    | <span class="icon-bar"></span>
+                    | <span class="icon-bar"></span>
+                    | <span class="icon-bar"></span>
+                a.navbar-brand(href="#") Grades
+            .navbar-collapse.collapse
+                .nav.navbar-nav
+                    li.dropdown
+                        a(href="#",class="dropdown-toggle", data-toggle="dropdown")
+                            | Courses <b class="caret"></b>
+                        ul.dropdown-menu
+                            - var i = 0
+                            each grade in grades
+                                - ++i
+                                li
+                                    a(href="##{i}") #{grade.course}
+    - var i = 0
+    each grade in grades
+        - ++i
+        .row
+            .col-sm-6.col-md-offset-3
+                a(id="#{i}")
+                h2 #{grade.course}
+                .panel.panel-default
+                    .panel-heading
+                        h3.panel-title Details
+                    .panel-body
+                        | Teacher: #{grade.teacher}
+                        br
+                        | Period: #{grade.period}
+                ul.list-group
+                    li.list-group-item.active Semester 1
+                    li.list-group-item Cycle 1: #{grade.cycle1}
+                    li.list-group-item Cycle 2: #{grade.cycle1}
+                    li.list-group-item Cycle 3: #{grade.cycle1}
+                    li.list-group-item Exam: #{grade.exam1}
+                    li.list-group-item Total: #{grade.sem1}
+                ul.list-group
+                    li.list-group-item.active Semester 2
+                    li.list-group-item Cycle 4: #{grade.cycle4}
+                    li.list-group-item Cycle 5: #{grade.cycle5}
+                    li.list-group-item Cycle 6: #{grade.cycle6}
+                    li.list-group-item Exam: #{grade.exam2}
+                    li.list-group-item Total: #{grade.sem2}
 

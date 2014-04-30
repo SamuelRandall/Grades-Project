@@ -2,7 +2,6 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #eee;
-  font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 form {
     max-width: 400px;
@@ -37,9 +36,11 @@ ul {
     list-style: circle;
     font-size: 12px;
 }
-a {
-  color: #00B7FF;
+.list-group-item.active {
+  color: #FFFFFF;
+  font-size: 16px;
 }
 .centered{
     text-align: center;
 }
+
