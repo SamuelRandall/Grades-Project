@@ -17,6 +17,40 @@ block content
                 li Fifth Six Weeks: <strong>#{grade.cycle5}</strong>
                 li Sixth Six Weeks: <strong>#{grade.cycle6}</strong>
                 li -
-                li Exam 1: <strong>#{grade.exam2}</strong>
-                li Semester 1: <strong>#{grade.sem2}</strong>
+                li Exam 2: <strong>#{grade.exam2}</strong>
+                li Semester 2: <strong>#{grade.sem2}</strong>
+    table#grades
+        thead
+            tr.head
+                th Teacher
+                th Course
+                th Period
+                th Cycle 1
+                th Cycle 2
+                th Cycle 3
+                th Exam 1
+                th Sem 1
+                th Cycle 4
+                th Cycle 5
+                th Cycle 6
+                th Exam 2
+                th Sem 2
+        tbody
+            - var i = -1
+            each val, key in cameras
+                - ++i
+                tr(class=(i % 2 == 0) ? 'odd' : 'even')
+                    td #{grade.teacher}
+                    td #{grade.course}
+                    td #{grade.period}
+                    td #{grade.cycle1}
+                    td #{grade.cycle2}
+                    td #{grade.cycle3}
+                    td #{grade.exam1}
+                    td #{grade.sem1}
+                    td #{grade.cycle4}
+                    td #{grade.cycle5}
+                    td #{grade.cycle6}
+                    td #{grade.exam2}
+                    td #{grade.sem2}
 

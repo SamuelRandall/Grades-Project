@@ -37,6 +37,9 @@ ul {
     list-style: circle;
     font-size: 12px;
 }
+ul li {
+
+}
 a {
   color: #00B7FF;
 }
